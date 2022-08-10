@@ -1,17 +1,21 @@
-termux根目录下<br>
-<pre>cd /data/data/com.termux/files</pre><br>
+cd termux Root Directory
 
-备份配置文件为termux-backup.tar.gz<br>
-<pre>tar -zcf /sdcard/termux-backup.tar.gz home usr<pre><br>
+`cd /data/data/com.termux/files`
 
 
-恢复，确保之前备份的home usr目录在一个备份文件中，注意 备份文件会覆盖现有配置<br>
-确保已经获得存储访问权限，然后进入termux根目录下<br>
-<pre>cd /data/data/com.termux/files</pre><br>
+Backup config termux-backup.tar.gz
+
+`tar -zcf /sdcard/termux-backup.tar.gz home usr`
 
 
-解压之前备份的内容
-<pre>tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-permissions</pre><br>
+Restore, ensure that the previous backup Home USR directory is in a backup file, pay attention to the backup file will cover the existing configuration
+Make sure you have obtained the storage access permissions, and then enter the Termux root directory.
 
-操作完成后重启termux
+`cd /data/data/com.termux/files`
 
+
+Refreshing the content before
+
+`tar -zxf /sdcard/termux-backup.tar.gz --recursive-unlink --preserve-permissions`
+
+Restart Termux after the operation is completed
